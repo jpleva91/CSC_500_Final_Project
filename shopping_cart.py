@@ -34,7 +34,7 @@ class ShoppingCart:
 
     # Get the number of items in the cart
     def get_num_items_in_cart(self):
-        return sum(item.item_quantity for item in self.cart_items)
+        return sum(int(item.item_quantity) for item in self.cart_items)
 
     # Get the cost of the cart
     def get_cost_of_cart(self):

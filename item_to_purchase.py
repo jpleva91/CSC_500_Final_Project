@@ -9,7 +9,7 @@ class ItemToPurchase:
         print(f'{self.item_name} {self.item_quantity} @ ${self.item_price:.2f} = ${self.get_item_cost():.2f}')
 
     def get_item_cost(self):
-        return self.item_price * self.item_quantity
+        return float(self.item_price) * int(self.item_quantity)
 
     def print_item_description(self):
         print(f'{self.item_name}: {self.item_description}')

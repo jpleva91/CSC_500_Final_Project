@@ -68,6 +68,7 @@ if __name__ == "__main__":
     # Continue shopping until the user quits
     while continue_shopping:
         print_menu(shopping_cart)
-        continue_shopping = input("Continue shopping? (y/n): ") == "y"
+        if input("Continue shopping? (y/n): ") == "n":
+            continue_shopping = False
 
     print("Thank you for shopping with us!")
